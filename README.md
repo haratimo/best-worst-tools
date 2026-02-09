@@ -3,12 +3,36 @@
 A comprehensive suite of tools for generating and scoring Best-Worst Scaling (BWS) experiments, originally developed by Geoff Hollis (University of Alberta).
 
 > [!IMPORTANT]
-> **New to MaxDiff? Use the Streamlit GUI!**
+> **New to Best-Worst Scaling? Use the Streamlit GUI!**
 > If you are a researcher who wants a user-friendly, point-and-click experience without worrying about code or command-line syntax, go directly to the `bestworst_tools_streamlit` folder. It provides a visual web interface to handle everything from trial generation to data scoring.
 
 ---
 
 ## 📂 Project Structure
+
+```bash
+.
+├── bestworst_tools_legacy_python2  # Original source code (archival)
+│   ├── README.txt                  # Original instructions
+│   ├── samples/                    # Sample data
+│   └── scripts/                    # Legacy Python 2.7 files
+├── bestworst_tools_python3         # Refactored for Python 3 (power users)
+│   ├── MIGRATION_SUMMARY.txt       # Technical validation & tests
+│   ├── README.txt                  # Updated usage instructions
+│   ├── samples/                    # Test data
+│   ├── scripts/                    # Refactored Python 3 files
+│   └── UPDATES.txt                 # Detailed change log
+├── bestworst_tools_streamlit       # User-friendly Web GUI (Recommended)
+│   ├── app.py                      # Main application
+│   ├── README.md                   # Installation & User Guide
+│   ├── requirements.txt            # App dependencies
+│   └── run_app.sh                  # One-click launch script
+└── README.md                       # This file
+```
+
+---
+
+## 📂 Folder Overview
 
 This repository is organized into three main versions of the tools:
 
