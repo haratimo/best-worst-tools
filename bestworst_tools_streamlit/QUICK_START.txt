@@ -1,0 +1,112 @@
+################################################################################
+# BEST-WORST SCALING TOOLS - STREAMLIT GUI
+# QUICK START GUIDE
+################################################################################
+
+QUICK INSTALLATION
+==================
+
+1. Open Terminal/Command Prompt
+
+2. Navigate to this directory:
+   cd /path/to/bestworst_tools_streamlit
+
+3. Install Streamlit:
+   pip3 install streamlit
+
+4. Run the app:
+   streamlit run app.py
+
+5. Your browser will open automatically to http://localhost:8501
+
+
+BASIC USAGE
+===========
+
+CREATE TRIALS:
+--------------
+1. Click "Create Trials" in sidebar
+2. Upload your items file (.txt, .csv, or .tsv)
+3. Set parameters (N trials, K items per trial)
+4. Click "Generate Trials"
+5. Download the CSV file
+
+
+SCORE DATA:
+-----------
+1. Click "Score Data" in sidebar
+2. Upload participant response files (.csv)
+3. Select scoring methods (e.g., Value, Best, Worst)
+4. Click "Calculate Scores"
+5. Download the results CSV
+
+
+FILE FORMATS
+============
+
+ITEMS FILE (for creating trials):
+----------------------------------
+Option 1: Plain text (.txt)
+  happiness
+  sadness
+  anger
+  fear
+
+Option 2: CSV/TSV spreadsheet
+  - Upload any data file
+  - The tool will automatically detect column headers
+  - Simply pick the item column from the dropdown menu
+
+
+PARTICIPANT DATA (for scoring):
+--------------------------------
+CSV file with columns:
+  participant,best,worst,option1,option2,option3,option4
+  P001,happiness,anger,happiness,sadness,anger,fear
+  P001,fear,sadness,joy,fear,sadness,surprise
+  ...
+
+Required columns:
+  - best: item chosen as best
+  - worst: item chosen as worst
+  - option1, option2, ... : all items shown in trial
+
+
+TROUBLESHOOTING
+===============
+
+App won't start?
+  → Make sure you installed streamlit: pip3 install streamlit
+
+Browser doesn't open?
+  → Manually open: http://localhost:8501
+
+Trial generation error?
+  → For "even" generators: N × K must divide evenly by number of items
+  → Try the suggested N values shown in the warning
+
+No scores generated?
+  → Check that CSV files have "best" and "worst" columns
+  → Check that there is actual data (not just headers)
+
+
+STOPPING THE APP
+================
+
+Press Ctrl+C in the terminal where you ran "streamlit run app.py"
+
+
+QUESTIONS?
+==========
+
+Contact: Parastoo Harati
+Email: p.harati@ualberta.ca
+
+Full documentation: See README.md in this directory
+
+
+################################################################################
+# ORIGINAL AUTHOR: Geoff Hollis
+# PYTHON 3 & GUI: Parastoo Harati (p.harati@ualberta.ca)
+# DATE: December 2023
+################################################################################

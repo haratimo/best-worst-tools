@@ -1,0 +1,185 @@
+################################################################################
+# BEST-WORST TOOLS - PYTHON 3 UPDATE DOCUMENTATION
+################################################################################
+
+ORIGINAL AUTHOR:
+  Geoff Hollis
+  University of Alberta
+  http://www.ualberta.ca/~hollis
+  hollis at ualberta dot ca
+
+PYTHON 3 UPDATE BY:
+  Parastoo Harati
+  p.harati@ualberta.ca
+  University of Alberta
+  December 15, 2023
+
+################################################################################
+# OVERVIEW
+################################################################################
+
+This directory contains the Python 3 updated version of the best-worst scaling (aka MaxDiff)
+tools originally created by Geoff Hollis. The original tools were written for
+Python 2.7, which reached end-of-life on January 1, 2020. This update ensures
+the tools continue to work with modern Python 3.x installations.
+
+All functionality from the original version has been preserved. The tools
+produce identical outputs to the Python 2.7 version.
+
+################################################################################
+# WHAT WAS UPDATED
+################################################################################
+
+All Python scripts have been updated for Python 3 compatibility. The following
+changes were made across all files:
+
+1. PRINT STATEMENTS → PRINT FUNCTIONS
+   - Changed all `print "text"` to `print("text")`
+   - Affects: All scripts with output
+
+2. xrange() → range()
+   - Replaced all `xrange()` calls with `range()`
+   - In Python 3, range() returns an iterator like xrange() did in Python 2
+   - Affects: create_trials.py, spreadsheet.py, trialgen.py, scoring.py,
+              flag_noncompliant_users.py, batch_simulate.py, 
+              aggregate_simulations.py
+
+3. INTEGER DIVISION OPERATOR
+   - Changed `/` to `//` for integer division operations
+   - Python 3 uses `/` for float division and `//` for integer division
+   - Affects: trialgen.py (lines computing trials_per_batch and batches)
+
+4. DICTIONARY ITERATION METHODS
+   - Changed `dict.iteritems()` to `dict.items()`
+   - Changed `dict.iterkeys()` to `dict.keys()`
+   - In Python 3, items() and keys() return view objects (similar to iterators)
+   - Affects: score_trials.py, simulate_results.py, flag_noncompliant_users.py,
+              aggregate_simulations.py
+
+5. SORTING WITH COMPARISON FUNCTIONS
+   - Replaced `sort(lambda a,b: cmp(x,y))` with `sort(key=lambda item: x)`
+   - The cmp() function was removed in Python 3
+   - Used key-based sorting which is more efficient
+   - Affects: simulate_results.py, flag_noncompliant_users.py
+
+6. BUG FIX IN scoring.py
+   - Fixed undefined variable 'winloss' in winloss_logit_score() function
+   - Changed to use the correct variable 'wln'
+   - This bug existed in the original code but would only manifest in Python 3
+
+7. COMMAND UPDATES IN batch_simulate.py
+   - Updated subprocess calls from 'python' to 'python3'
+   - Ensures simulations use Python 3 interpreter
+
+8. ATTRIBUTION HEADERS
+   - Added Python 3 update attribution to all script files
+   - Preserved all original author information and licensing
+
+################################################################################
+# FILES MODIFIED
+################################################################################
+
+Scripts Directory (scripts/):
+  ✓ create_trials.py              - Trial generation from item lists
+  ✓ score_trials.py                - Score best-worst experimental data
+  ✓ flag_noncompliant_users.py    - Identify and filter noncompliant users
+  ✓ simulate_results.py            - Run simulations with artificial data
+  ✓ batch_simulate.py              - Batch simulation runner
+  ✓ aggregate_simulations.py       - Aggregate simulation results
+  ✓ spreadsheet.py                 - CSV/TSV file reading support
+  ✓ trialgen.py                    - Trial generation algorithms
+  ✓ scoring.py                     - Scoring methods implementation
+
+Documentation:
+  ✓ README.txt                     - Updated for Python 3 requirements
+  ✓ UPDATES.txt (this file)        - Update documentation
+
+Sample Data:
+  ✓ samples/                       - Copied unchanged from original
+
+################################################################################
+# USAGE NOTES
+################################################################################
+
+REQUIREMENTS:
+  - Python 3.x (tested with Python 3.6+)
+  - For aggregate_simulations.py: scipy library
+    Install with: pip3 install scipy
+
+RUNNING THE SCRIPTS:
+  All scripts should now be called with 'python3' instead of 'python':
+  
+  Example:
+    python3 scripts/create_trials.py samples/anew_words.txt > trials.csv
+    python3 scripts/score_trials.py samples/aoa_raw_data/* > scores.csv
+
+COMPATIBILITY:
+  - Tested on Linux, macOS, and Windows with Python 3.6+
+  - Output format is identical to Python 2.7 version
+  - All original features and algorithms preserved
+  - Sample data files are unchanged and compatible
+
+BACKWARDS COMPATIBILITY:
+  - These scripts will NOT work with Python 2.7
+  - If you need Python 2.7 compatibility, use the original version in the
+    'bestworst_tools' directory
+
+################################################################################
+# TESTING PERFORMED
+################################################################################
+
+The following tests were conducted to verify correctness:
+
+1. Syntax Validation
+   - All files compile without errors using Python 3.x
+   - No deprecated syntax warnings
+
+2. Functional Testing
+   - create_trials.py tested with sample word lists
+   - score_trials.py tested with sample AoA data
+   - Output compared with original Python 2.7 version
+   - Results are identical (verified via diff)
+
+3. Integration Testing
+   - Full workflow tested: trial generation → data collection → scoring
+   - flag_noncompliant_users.py tested with sample compliance data
+   - All example commands from README verified
+
+################################################################################
+# KNOWN ISSUES
+################################################################################
+
+None at this time. If you encounter any issues, please report them to:
+  Parastoo Harati (p.harati@ualberta.ca)
+
+################################################################################
+# CITATION
+################################################################################
+
+When using these tools in published research, please cite the original paper:
+
+  Hollis, G. (2017). Scoring best/worst data in unbalanced, many-item designs,
+    with applications to crowdsourcing semantic judgments. Behavior Research 
+    Methods, XX(X), 1-19. doi: 10.3758/s13428-017-0898-2
+
+If mentioning the Python 3 update specifically, you may also credit:
+  "Python 3 update by Parastoo Harati, University of Alberta (2023)"
+
+################################################################################
+# LICENSE
+################################################################################
+
+This software maintains the original Creative Commons license:
+  Attribution-NonCommerical-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+  https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+################################################################################
+# ACKNOWLEDGMENTS
+################################################################################
+
+We honor the memory of Geoff Hollis, whose innovative work on best-worst
+scaling methodologies has been invaluable to the research community. This
+update ensures his tools remain accessible to researchers using modern
+Python environments.
+
+Rest in peace, Geoff.

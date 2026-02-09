@@ -1,0 +1,288 @@
+################################################################################
+# STREAMLIT GUI - SETUP AND USAGE SUMMARY
+################################################################################
+
+WHAT YOU HAVE
+=============
+
+A complete, ready-to-use web interface for the best-worst scaling (aka MaxDiff) (aka MaxDiff) tools!
+
+DIRECTORY: bestworst_tools_streamlit/
+
+FILES INCLUDED:
+  ✓ app.py             - Main Streamlit application (500+ lines)
+  ✓ requirements.txt   - Dependencies list
+  ✓ README.md          - Comprehensive documentation
+  ✓ QUICK_START.txt    - Quick reference guide
+  ✓ run_app.sh         - One-click launch script
+  ✓ SETUP_GUIDE.txt    - This file
+
+
+FEATURES
+========
+
+🎲 CREATE TRIALS:
+  → Upload items file (txt, csv, or tsv)
+  → Set parameters with visual guidance
+  → Instant validation of settings
+  → Preview before downloading
+  → Download optimized trials as CSV
+
+📈 SCORE DATA:
+  → Upload multiple participant files
+  → Choose from 12 scoring methods
+  → Real-time processing
+  → Preview results
+  → Download scores as CSV
+
+🖥️ USER INTERFACE:
+  → Modern, clean design
+  → Drag-and-drop file uploads
+  → No coding required
+  → Runs in web browser
+  → Works offline (runs locally)
+
+
+HOW TO USE
+==========
+
+METHOD 1: Using the Launch Script (EASIEST)
+--------------------------------------------
+
+1. Install Streamlit (one-time only):
+   pip3 install streamlit
+
+2. Double-click run_app.sh
+   OR in terminal:
+   ./run_app.sh
+
+3. Browser opens automatically!
+
+
+METHOD 2: Manual Launch
+------------------------
+
+1. Install Streamlit:
+   pip3 install streamlit
+
+2. Open terminal in this directory
+
+3. Run:
+   streamlit run app.py
+
+4. Open browser to http://localhost:8501
+
+
+FIRST TIME SETUP
+================
+
+Step 1: Check Python
+---------------------
+python3 --version
+
+Should show Python 3.6 or higher.
+If not installed, download from python.org
+
+
+Step 2: Install Streamlit
+--------------------------
+pip3 install streamlit
+
+This downloads and installs Streamlit (~50 MB).
+Takes about 1-2 minutes.
+
+
+Step 3: Run the App
+--------------------
+streamlit run app.py
+
+Browser opens to http://localhost:8501
+
+
+Step 4: Start Using!
+---------------------
+- Click "Create Trials" or "Score Data" in sidebar
+- Follow on-screen instructions
+- Upload files, click buttons, download results!
+
+
+SHARING WITH OTHERS
+===================
+
+Option 1: Share this Folder
+----------------------------
+Give someone the bestworst_tools_streamlit/ folder
+They follow the same setup steps above
+
+
+Option 2: Deploy to Web (Advanced)
+-----------------------------------
+Use Streamlit Cloud (free!) to host online:
+1. Create GitHub repository
+2. Push this code
+3. Deploy at share.streamlit.io
+4. Share the URL with anyone!
+
+Details: https://docs.streamlit.io/streamlit-community-cloud
+
+
+TYPICAL WORKFLOW
+================
+
+For Creating Trials:
+--------------------
+1. Prepare items.txt with your words/stimuli
+2. Open the Streamlit app
+3. Click "Create Trials"
+4. Upload items.txt
+5. Set N=8320, K=4 (or adjust as needed)
+6. Click "Generate Trials"
+7. Download the CSV
+8. Upload to your experiment platform
+
+
+For Scoring Data:
+------------------
+1. Collect participant data (CSV format)
+2. Open the Streamlit app
+3. Click "Score Data"
+4. Upload participant files
+5. Select scoring methods (e.g., Value, Best, Worst)
+6. Click "Calculate Scores"
+7. Download results
+8. Analyze in R, Python, Excel, etc.
+
+
+EXAMPLE FILES
+=============
+
+You can test with sample data from:
+  ../bestworst_tools_python3/samples/
+
+Try these:
+  → anew_words.txt           (for creating trials)
+  → aoa_raw_data/*.csv       (for scoring data)
+
+
+TROUBLESHOOTING
+===============
+
+Q: App won't start?
+A: Make sure Streamlit is installed:
+   pip3 install streamlit
+
+Q: Import errors?
+A: The app.py needs access to ../bestworst_tools_python3/scripts/
+   Make sure that directory exists and has the Python scripts.
+
+Q: Browser doesn't open?
+A: Manually go to http://localhost:8501
+
+Q: Port already in use?
+A: Run with different port:
+   streamlit run app.py --server.port 8502
+
+Q: Can't upload files?
+A: Check file format (.txt, .csv, or .tsv)
+   Make sure file isn't empty
+
+Q: Trial generation fails?
+A: For "even" generators, N×K must divide evenly by number of items
+   Use suggested N values shown in the app
+
+
+WHAT'S DIFFERENT FROM COMMAND LINE?
+====================================
+
+COMMAND LINE VERSION:
+  python3 scripts/create_trials.py input.txt 8320 4 > output.csv
+  → Requires terminal knowledge
+  → Must remember syntax
+  → Text-based interface
+
+STREAMLIT GUI:
+  [Click] [Upload] [Configure] [Download]
+  → Point and click
+  → Visual feedback
+  → No syntax to remember
+  → Helpful error messages
+
+Both versions use the SAME underlying algorithms!
+Results are identical.
+
+
+FOR NON-PROGRAMMERS
+===================
+
+You DO NOT need to know:
+  ❌ Python programming
+  ❌ Command line
+  ❌ How the algorithms work
+
+You DO need to know:
+  ✓ How to open a terminal (for installation)
+  ✓ How to use a web browser
+  ✓ How to upload/download files
+
+That's it!
+
+
+SYSTEM REQUIREMENTS
+===================
+
+  ✓ Python 3.6 or higher
+  ✓ Web browser (any modern browser)
+  ✓ ~100 MB disk space
+  ✓ Internet (for initial Streamlit install only)
+  ✓ Works on: Linux, Mac, Windows
+
+
+GETTING HELP
+============
+
+Questions about GUI or installation:
+  → Parastoo Harati
+  → p.harati@ualberta.ca
+
+Questions about methodology:
+  → See README.md for citation
+  → Read Hollis (2017) paper
+
+Technical issues:
+  → Check README.md troubleshooting section
+  → Check QUICK_START.txt
+
+
+CREDITS
+=======
+
+Original Tools:      Geoff Hollis
+Python 3 migration, refactor, and GUI build:  Parastoo Harati
+Streamlit GUI:       Parastoo Harati
+Date:                December 15, 2023
+
+
+LICENSE
+=======
+
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+
+NEXT STEPS
+==========
+
+1. Install Streamlit:
+   pip3 install streamlit
+
+2. Run the app:
+   streamlit run app.py
+
+3. Try creating trials with sample data!
+
+4. Share with your colleagues!
+
+
+################################################################################
+# Ready to go! Run: streamlit run app.py
+################################################################################
