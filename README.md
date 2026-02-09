@@ -1,6 +1,6 @@
 # Best-Worst Scaling (aka MaxDiff) Tools
 
-A comprehensive suite of tools for generating and scoring Best-Worst Scaling (BWS) experiments, originally developed by Geoff Hollis (University of Alberta).
+A comprehensive suite of tools for generating and scoring Best-Worst Scaling (BWS) experiments, originally developed by Dr. Geoff Hollis (University of Alberta).
 
 > [!IMPORTANT]
 > **New to Best-Worst Scaling? Use the Streamlit GUI!**
@@ -51,12 +51,12 @@ This repository is organized into three main versions of the tools:
 **Why use it?** 
 - **Automation**: Easily scriptable for large-batch simulations or automated pipelines.
 - **Modern**: Fully migrated to Python 3 with refactored code for better performance.
-- **Scientific Validation**: Includes the full simulation engine used in Geoff Hollis's original research.
+- **Scientific Validation**: Includes the full simulation engine used in Dr. Geoff Hollis's original research.
 
 ### 3. [Legacy Version (Python 2.7)](file:///media/parastoo/0EFE0F0B0EFE0F0B/Experiments_UofA/Experiments/bestworst_tools_Hollis_original/bestworst_tools_legacy_python2/)
 **Location:** `/bestworst_tools_legacy_python2/`  
 **Target User:** Researchers maintaining old projects or using isolated Python 2 environments.  
-**Note:** This is the original codebase as developed by Geoff Hollis. It remains here for archival and reproducibility purposes.
+**Note:** This is the original codebase as developed by Dr. Geoff Hollis. It remains here for archival and reproducibility purposes.
 
 ---
 
@@ -83,7 +83,7 @@ This repository is organized into three main versions of the tools:
 
 ## ⚖️ License & Attribution
 
-**Original Author:** Geoff Hollis  
+**Original Author:** Dr. Geoff Hollis  
 **Migration & Refactor:** Parastoo Harati (p.harati@ualberta.ca)  
 **Finalized:** December 15, 2023  
 

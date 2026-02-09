@@ -15,7 +15,7 @@ concreteness.
 Your input data may contain other columns (e.g., participant data), but it MUST
 contain these K+2 columns.
 
-Created by Geoff Hollis
+Created by Dr. Geoff Hollis
 http://www.ualberta.ca/~hollis
 hollis at ualberta dot ca
 

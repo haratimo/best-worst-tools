@@ -3,7 +3,7 @@ Helper functions for scoring best-worst trials. Provides various options for
 scoring data, including Elo, Rescorla-Wagner, Value Scoring, and various
 count-based methods. See README.txt for further info on the scoring methods.
 
-Created by Geoff Hollis
+Created by Dr. Geoff Hollis
 http://www.ualberta.ca/~hollis
 hollis at ualberta dot ca
 

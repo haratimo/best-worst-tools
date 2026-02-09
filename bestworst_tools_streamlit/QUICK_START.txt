@@ -106,7 +106,7 @@ Full documentation: See README.md in this directory
 
 
 ################################################################################
-# ORIGINAL AUTHOR: Geoff Hollis
+# ORIGINAL AUTHOR: Dr. Geoff Hollis
 # PYTHON 3 & GUI: Parastoo Harati (p.harati@ualberta.ca)
 # DATE: December 2023
 ################################################################################

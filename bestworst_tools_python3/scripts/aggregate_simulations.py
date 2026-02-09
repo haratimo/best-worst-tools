@@ -3,7 +3,7 @@ aggregate_simulations.py
 
 Aggregates batches of simulations with the same parameters.
 
-Created by Geoff Hollis
+Created by Dr. Geoff Hollis
 http://www.ualberta.ca/~hollis
 hollis at ualberta dot ca
 

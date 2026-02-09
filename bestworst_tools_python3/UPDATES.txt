@@ -3,7 +3,7 @@
 ################################################################################
 
 ORIGINAL AUTHOR:
-  Geoff Hollis
+  Dr. Geoff Hollis
   University of Alberta
   http://www.ualberta.ca/~hollis
   hollis at ualberta dot ca
@@ -19,7 +19,7 @@ PYTHON 3 UPDATE BY:
 ################################################################################
 
 This directory contains the Python 3 updated version of the best-worst scaling (aka MaxDiff)
-tools originally created by Geoff Hollis. The original tools were written for
+tools originally created by Dr. Geoff Hollis. The original tools were written for
 Python 2.7, which reached end-of-life on January 1, 2020. This update ensures
 the tools continue to work with modern Python 3.x installations.
 
@@ -177,7 +177,7 @@ This software maintains the original Creative Commons license:
 # ACKNOWLEDGMENTS
 ################################################################################
 
-We honor the memory of Geoff Hollis, whose innovative work on best-worst
+We honor the memory of Dr. Geoff Hollis, whose innovative work on best-worst
 scaling methodologies has been invaluable to the research community. This
 update ensures his tools remain accessible to researchers using modern
 Python environments.

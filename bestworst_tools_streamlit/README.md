@@ -1,6 +1,6 @@
 # Best-Worst Scaling (aka MaxDiff) Tools - Streamlit GUI
 
-A user-friendly web interface for the best-worst scaling (aka MaxDiff) (aka MaxDiff) tools originally created by Geoff Hollis.
+A user-friendly web interface for the best-worst scaling (aka MaxDiff) (aka MaxDiff) tools originally created by Dr. Geoff Hollis.
 
 ![Best-Worst Tools](https://img.shields.io/badge/Python-3.6+-blue.svg)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.30+-red.svg)
@@ -29,7 +29,7 @@ This is a **graphical web interface** for the best-worst scaling (aka MaxDiff) (
 **What is Best-Worst Scaling?**
 Best-worst scaling is a research methodology for measuring subjective dimensions (preferences, perceptions, etc.) across items. Participants view K items at a time and select the "best" and "worst" according to the dimension of interest.
 
-**Original Tools:** Created by Geoff Hollis(University of Alberta)  
+**Original Tools:** Created by Dr. Geoff Hollis(University of Alberta)  
 **GUI Development:** Parastoo Harati (p.harati@ualberta.ca)  
 **Date:** December 2023
 
@@ -59,7 +59,7 @@ Best-worst scaling is a research methodology for measuring subjective dimensions
 - No coding required!
 
 ### 🧪 Scientific Validation
-- **Proven Accuracy**: Built on Geoff Hollis's peer-reviewed simulation engine
+- **Proven Accuracy**: Built on Dr. Geoff Hollis's peer-reviewed simulation engine
 - **Noise Robustness**: Optimized for "noisy" real-world crowdsourced data
 - **Validated Methods**: 12 scoring algorithms tested against simulated "truth"
 
@@ -304,7 +304,7 @@ streamlit run app.py --server.port 8502
 ## 📚 About
 
 ### Original Author
-**Geoff Hollis**   
+**Dr. Geoff Hollis**   
 University of Alberta  
 
 ### Citation
@@ -339,7 +339,7 @@ Under the following terms:
 
 ## 🙏 Acknowledgments
 
-We honor the memory of **Geoff Hollis**, whose innovative work on best-worst scaling (aka MaxDiff) methodologies has been invaluable to the research community. This graphical interface aims to make his tools accessible to researchers worldwide, including those who may not be comfortable with command-line interfaces.
+We honor the memory of **Dr. Geoff Hollis**, whose innovative work on best-worst scaling (aka MaxDiff) methodologies has been invaluable to the research community. This graphical interface aims to make his tools accessible to researchers worldwide, including those who may not be comfortable with command-line interfaces.
 
 
 ---

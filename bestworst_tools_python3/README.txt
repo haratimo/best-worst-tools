@@ -17,7 +17,7 @@ Python 3 pre-installed or available through package managers.
   http://www.python.org
 
 NOTE: This is an updated version of the original best-worst tools created by
-Geoff Hollis. The original version was written for Python 2.7. This version
+Dr. Geoff Hollis. The original version was written for Python 2.7. This version
 has been updated for Python 3 compatibility by Parastoo Harati
 (p.harati@ualberta.ca) in December 2023. See UPDATES.txt for details on what
 was changed.

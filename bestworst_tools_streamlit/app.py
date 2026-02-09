@@ -2,9 +2,9 @@
 Best-Worst Scaling (aka MaxDiff) Tools - Streamlit Web Interface
 
 A user-friendly graphical interface for the best-worst scaling (aka MaxDiff) tools
-originally created by Geoff Hollis.
+originally created by Dr. Geoff Hollis.
 
-Original Author: Geoff Hollis
+Original Author: Dr. Geoff Hollis
 Python 3 migration, refactor, and GUI build: Parastoo Harati (p.harati@ualberta.ca)
 Streamlit GUI: Parastoo Harati (p.harati@ualberta.ca)
 Date: December 15, 2023
@@ -78,7 +78,7 @@ app_mode = st.sidebar.radio(
 st.sidebar.markdown("---")
 st.sidebar.markdown("""
 **Original Author:**  
-Geoff Hollis
+Dr. Geoff Hollis
 
 **Python 3 migration, refactor, and GUI build:**  
 Parastoo Harati  
@@ -470,7 +470,7 @@ def about_page():
     
     ## Original Work
     
-    These tools were originally created by **Geoff Hollis** at the University of Alberta.
+    These tools were originally created by **Dr. Geoff Hollis** at the University of Alberta.
     Geoff's pioneering work on best-worst scaling methodologies has been invaluable to the 
     research community.
     
@@ -503,12 +503,12 @@ def about_page():
     - **Test noise levels**: See how algorithms perform when data is inconsistent or "noisy."
     - **Optimize designs**: Determine the best N (trials) and K (items) for a specific study.
     
-    Geoff Hollis's 2017 research proved that his **Value** method (included here) is exceptionally robust to 
+    Dr. Geoff Hollis's 2017 research proved that his **Value** method (included here) is exceptionally robust to 
     noise compared to traditional methods like Elo.
     
     ## Acknowledgments
     
-    We honor the memory of Geoff Hollis, whose innovative work continues to benefit researchers 
+    We honor the memory of Dr. Geoff Hollis, whose innovative work continues to benefit researchers 
     worldwide. This graphical interface aims to make his tools accessible to a broader audience,
     including those who may not be comfortable with command-line interfaces.
     

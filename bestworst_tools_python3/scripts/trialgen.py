@@ -3,7 +3,7 @@ trialgen.py
 
 Various methods for generating best-worst trials from a list of items.
 
-Created by Geoff Hollis
+Created by Dr. Geoff Hollis
 http://www.ualberta.ca/~hollis
 hollis at ualberta dot ca
 
