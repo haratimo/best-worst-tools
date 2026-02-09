@@ -5,7 +5,7 @@ Allows you to iterate through various values of parameters and run the simulator
 with each combination. Can repeat each combination of parameters multiple times,
 so you can average your results across simulations.
 
-Created by Dr. Geoff Hollis
+Created by Dr Geoff Hollis
 http://www.ualberta.ca/~hollis
 hollis at ualberta dot ca
 

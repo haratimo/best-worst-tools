@@ -1,7 +1,7 @@
 """
 Runs a simulated best-worst experiment, according to specified parameters.
 
-Created by Dr. Geoff Hollis
+Created by Dr Geoff Hollis
 http://www.ualberta.ca/~hollis
 hollis at ualberta dot ca
 

@@ -8,7 +8,7 @@ other strategy that makes their answers deviate from the consensus.
 This script can additionally filter noncompliant participants from your data
 and output a "clean" dataset.
 
-Created by Dr. Geoff Hollis
+Created by Dr Geoff Hollis
 http://www.ualberta.ca/~hollis
 hollis at ualberta dot ca
 

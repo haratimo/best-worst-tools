@@ -10,7 +10,7 @@ Script provides options for customizing how best-worst trials are generated.
 Default options are the suggested options. Don't screw around unless you know
 what you are doing.
 
-Created by Dr. Geoff Hollis
+Created by Dr Geoff Hollis
 http://www.ualberta.ca/~hollis
 hollis at ualberta dot ca
 

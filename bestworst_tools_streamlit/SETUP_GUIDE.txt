@@ -256,7 +256,7 @@ Technical issues:
 CREDITS
 =======
 
-Original Tools:      Dr. Geoff Hollis
+Original Tools:      Dr Geoff Hollis
 Python 3 migration, refactor, and GUI build:  Parastoo Harati
 Streamlit GUI:       Parastoo Harati
 Date:                December 15, 2023
