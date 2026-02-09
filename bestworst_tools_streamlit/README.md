@@ -341,7 +341,6 @@ Under the following terms:
 
 We honor the memory of **Geoff Hollis**, whose innovative work on best-worst scaling (aka MaxDiff) methodologies has been invaluable to the research community. This graphical interface aims to make his tools accessible to researchers worldwide, including those who may not be comfortable with command-line interfaces.
 
-Rest in peace, Geoff. Your work continues to make a difference.
 
 ---
 

@@ -182,4 +182,3 @@ scaling methodologies has been invaluable to the research community. This
 update ensures his tools remain accessible to researchers using modern
 Python environments.
 
-Rest in peace, Geoff.

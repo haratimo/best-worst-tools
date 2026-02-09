@@ -354,7 +354,6 @@ The original algorithms, methodologies, and intellectual contributions remain
 entirely Geoff's work. This update provides only the technical translation
 necessary to run the code on modern Python interpreters.
 
-Rest in peace, Geoff. Your work continues to make a difference.
 
 ################################################################################
 # SUPPORT & CONTACT

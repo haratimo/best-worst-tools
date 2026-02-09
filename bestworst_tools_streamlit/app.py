@@ -512,7 +512,6 @@ def about_page():
     worldwide. This graphical interface aims to make his tools accessible to a broader audience,
     including those who may not be comfortable with command-line interfaces.
     
-    Rest in peace, Geoff.
     """)
     
     st.markdown("---")
