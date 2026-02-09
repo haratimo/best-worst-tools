@@ -91,3 +91,9 @@ This repository is organized into three main versions of the tools:
 Hollis, G. (2017). Scoring best/worst data in unbalanced, many-item designs, with applications to crowdsourcing semantic judgments. *Behavior Research Methods*, 1-19. doi: 10.3758/s13428-017-0898-2
 
 **License:** Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+
+---
+
+## 🙏 Acknowledgments
+
+We honor the memory of Dr Geoff Hollis, whose innovative work continues to benefit researchers worldwide. This project aims to make his tools accessible to a broader audience, including those who may not be comfortable with command-line interfaces.
